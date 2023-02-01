@@ -1,6 +1,8 @@
 # Password-generator-challenge
+challenge 3 of the bootcamp week 3
 
 ## Contents
+
 1: Project Description 
 2: Deployed Page link
 3: Mock-up
@@ -9,9 +11,11 @@
 6: Contributions
 
 ## Project Description 
-I have to modify starter code to create an application that enables users to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+This project is to generate random password, the length of the password should be between 8 to 128 characters. User can select the characters in the password i.e. uppercase, lowercase, numeric or special characters. once selected the criteria, random password will appear on screen. it is responsive and adapts multiple screen sizes.
 
 ## deployed page link
+
+https://calligraphist.github.io/Password-generator-challenge/
 
 ## Mock-Up
 
