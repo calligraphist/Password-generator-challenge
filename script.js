@@ -5,18 +5,7 @@ var uppercaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "
 var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "?", "/", "-", ":", ";", "[", "]", "{", "}", ".", "<", ">", "=", "_", "`", "|", "~"];
 var selectedArray = [];
 function generatePassword(){
-// asking user to choose password length using if-else statement
-numberOfCharacters = prompt("Please select your password length between 8-128 characters.");
-if (numberOfCharacters < 8 || numberOfCharacters > 128) {
-  //return "Please choose a valid number of characters.";
-} else if (isNaN(numberOfCharacters)) {
-  numberOfCharacters = prompt("Not a valid number, Please enter a valid number.");
-}
-else {
-  alert("The length of your password will be " + numberOfCharacters + " characters.");
-  
-}
-}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
