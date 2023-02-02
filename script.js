@@ -64,12 +64,13 @@ if (choiceOfspecialChar) {
 //
 var selectedArray = "";
 for (var i = 0; i < numberOfCharacters; i++) {
-  var random =[Math.floor(Math.random() * expectedOutcome.length)];
-   //Password += expectedOutcome[random];
-   finalPassword = finalPassword + expectedOutcome[random];
+  var random =Math.floor(Math.random() * expectedOutcome.length);
+   finalPassword += expectedOutcome[random];
+   //finalPassword = finalPassword + expectedOutcome[random];
   }
   return finalPassword;
 }
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
