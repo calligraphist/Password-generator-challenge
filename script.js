@@ -47,7 +47,7 @@ if (choiceOfupperCase===true || choiceOflowerCase===true || choiceOfnumbers===tr
 } else {
   alert( "please choose atleat one of the character types.")
 }
-}
+
 //combining selected characters
 if (choiceOfupperCase) {
   expectedOutcome = expectedOutcome.concat(choiceOfupperCase);
@@ -61,22 +61,13 @@ if (choiceOfnumbers) {
 if (choiceOfspecialChar) {
   expectedOutcome = expectedOutcome.concat(choiceOfspecialChar);
 }
-
-// var selectedArray=[];
-//  random() * arr.length
-//  function getRandom(arr){
-//    var index = Math.floor();
-// }
-// return arr[index];
-//  var password = "";
-//   for(var i=0; i < numberOfCharacters; i++){
-//      password += "a"
-// // //   var password = selectedArray[Math.floor(Math.random() *selectedArray.length)];
-//   }
-// Array.prototype.random = function (length) {
-//   return this[Math.floor((Math.random()*length))];
-// }
-// }
+//
+var selectedArray = "";
+for (var i = 0; i < numberOfCharacters; i++) {
+  var random =[Math.floor(Math.random() * expectedOutcome.length)];
+   finalPassword += expectedOutcome[random];
+}
+}
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
