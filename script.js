@@ -50,16 +50,16 @@ if (choiceOfupperCase===true || choiceOflowerCase===true || choiceOfnumbers===tr
 
 //combining selected characters
 if (choiceOfupperCase) {
-  expectedOutcome = expectedOutcome.concat(choiceOfupperCase);
+  expectedOutcome = expectedOutcome.concat(upperCase);
 }
 if (choiceOflowerCase) {
-  expectedOutcome = expectedOutcome.concat(choiceOflowerCase);
+  expectedOutcome = expectedOutcome.concat(lowerCase);
 }
 if (choiceOfnumbers) {
-  expectedOutcome = expectedOutcome.concat(choiceOfnumbers);
+  expectedOutcome = expectedOutcome.concat(numbers);
 }
 if (choiceOfspecialChar) {
-  expectedOutcome = expectedOutcome.concat(choiceOfspecialChar);
+  expectedOutcome = expectedOutcome.concat(specialChar);
 }
 //
 var finalPassword = "";
