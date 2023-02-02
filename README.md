@@ -58,6 +58,11 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 ## contribution
+Actual code was provided by UNB bootcamp.
+Special thganks to my instructor for all the help.
+My code is inspired by
+ https://github.com/mmlawton15/
+ https://github.com/njthanhtrang/
 
 
 
