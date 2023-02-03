@@ -5,16 +5,23 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "+", "?", "/", "-", ":", ";", "[", "]", "{", "}", ".", "<", ">", "=", "_", "`", "|", "~"];
 var expectedOutcome = [];
 function generatePassword(){
-// asking user to choose password length using if-else statement
-numberOfCharacters = prompt("Please select your password length between 8-128 characters.");
-if (numberOfCharacters < 8 || numberOfCharacters > 128) {
-  numberOfCharacters = prompt("Please choose a valid number between 8 and 128.");
+// asking user to choose password length using if-else statement and a for loop
+
+for (var askprompt=true; askprompt==true;){
+var numberOfCharacters = prompt("Please select your password length between 8-128 characters.");
+if (numberOfCharacters === null){
+  return ""
+}
+numberOfCharacters = parseInt(numberOfCharacters, 10)
+ if (numberOfCharacters < 8 || numberOfCharacters > 128) {
+alert("Please choose a valid number between 8 and 128.");
 } else if (isNaN(numberOfCharacters)) {
-  numberOfCharacters = prompt("Not a valid number, Please enter a valid number between 8 and 128.");
+alert("Not a valid number, Please enter a valid number between 8 and 128.");
 }
 else {
   alert("The length of your password will be " + numberOfCharacters + " characters.");
-  
+ askprompt=false
+}
 }
 //choice of characters given i.e., uppercase, lowercase, numbers and/or special characters.
 choiceOfupperCase = confirm("Do you want uppercase letters in your password?");
